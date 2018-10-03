@@ -1,0 +1,52 @@
+Projekt 2018-09-28
+Jesper Christenson
+Dev-ops Nackademin
+
+Väldokumenterat / syftet med lösningen
+Interaktivitet.
+Det skall vara genomtestat / felsökt.
+Grupp(Max 3 pers, alt ensam)
+
+
+
+Idée:
+Jag vill skapa ett program där man som ny användare kan registrera sig och sedan logga in.
+När man väl är inloggad så skall man kunna föra över ett värde från sin användare till en annan existerande användare.
+ 
+
+Vad? 	
+Ett "bitcoin" program där du kan logga in / registrera dig. 
+Du skall kunna göra transaktioner till andra användare med dina "BitJespercoins".
+Användare tilldelas 3 coins vid registrering.
+	
+
+Utförande:
+Input och fråga användare om de är användare sedan innan, eller om de vill bli användare.
+ 
+Om användare är registrerad sedan innan, får den försöka logga in.
+Jag testade mig fram och lyckades göra en loop som sökte igenom min .txt fil för att se ifall användare existerar. Koden separerar med komma tecken.
+Ifall användar-id eller password är fel, får personen försöka igen.
+ 
+Om användare inte är en registrerad medlem får användare frågan om de vill registrera sig eller inte.
+ 
+Om användare svarar 'No' avlutas programmet.
+
+Om användare svarar 'Yes'. Skriver vi in det nytt  användarnamn, lösenord samt ge ny användare 3 BitJespercoins till att börja med. Detta skrivs in i min .txt fil.
+När detta är klart hänvisas användare till att logga in.
+ 
+När användaren väl är inloggad dyker frågan upp om de vill överföra pengar till en annan användare.
+
+skriver användaren 'No'  printas det  ut ”good job”.
+skriver användaren ’Yes’ får användaren skriva in username hos personen den vill föra över pengar till.
+När användarnamnet väl skrivits in söker programmet igenom ifall username har ett lösenord (som man får välja när man registrerar sig). Om det inte finns ett lösenord hos det angivna username som användare skrev in säger programmet till att det inte finns en sådan användare och att användare får försöka igen.
+För att testa detta har jag skapat en användare under namnet ”monalisa” som ej har ett tilldelat lösenord som man kan försöka överföra pengar på.
+ 
+Om användare finns, överförs pengar och det kommer en utskrift på personens nya balance.
+Användare loggas ut.
+
+
+
+ 
+ 
+ 
+ 
